@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interior Design Consultant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* For the custom range slider */
+      input[type=range].comparator-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: col-resize;
+      }
+      input[type=range].comparator-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 4px;
+        height: 100%;
+        background: white;
+        cursor: col-resize;
+        border-radius: 0;
+      }
+      input[type=range].comparator-slider::-moz-range-thumb {
+        width: 4px;
+        height: 100%;
+        background: white;
+        cursor: col-resize;
+        border: none;
+        border-radius: 0;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
